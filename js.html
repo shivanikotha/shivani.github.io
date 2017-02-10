@@ -1,0 +1,71 @@
+<html>
+<head>
+<title> strings</title>
+</head>
+<body>
+<center><h1>JAVASCRIPT STRING OBJECT METHODS</h1></center>
+<h2>uppercase</h2>
+    <p><strong>input</strong>:<span id="txt0"> study </span><p>
+    <p><strong>output</strong>:<span id="txt1"></span></p><hr>
+<h2>String length</h2>
+    <p><strong>input</strong>:<span id="txt0"> education </span></p>
+    <p><strong>output</strong>:<span id="txt2"></span></p><hr>
+<h2>search</h2>
+    <p><strong>input</strong>: <span id="txt0">education is the future</span></p>
+    <p><strong>output</strong><span id="txt3"></span></p><hr>
+<h2>Index</h2>
+    <p><strong>input</strong>:<span id="txt0">educate the girl child</span></p>
+    <p><strong>output</strong>:<span id="txt4"></span></p><hr>
+<h2>Substring</h2>
+    <p><strong>input</strong>:<span id="txt0">education is life for our future</span></p>
+    <p><strong>output</strong>:<span id="txt5"></span></p><hr>
+<h2>slice</h2>
+    <p><strong>input</strong>:<span id="txt0">try and try untill u get sucess</span></p>
+    <p><strong>output</strong>:<span id="txt6"></span></p><hr>
+<h2>Replace</h2>
+    <p><strong>input</strong>:<span id="txt0">active,brightness</span></p>
+    <p><strong>output</strong>:<span id="txt7"></span></p><hr>
+<h2>Lowercase</h2>
+    <p><strong>input</strong>:<span id="txt0">CLASS</span></p>
+    <p><strong>output</strong>:<span id="txt8"></span></p><hr>
+<h2>charAt</h2>
+    <p><strong>input</strong>:<span id="txt0">best future </span></p>
+    <p><strong>output</strong>:<span id="txt9"></span></p><hr>
+<h2>charcodeAt</h2>
+    <p><strong>input</strong>:<span id="txt0">happy life </span></p>
+    <p><strong>output</strong>:<span id="txt10"></span></p><hr>
+<h2>Trim</h2>
+    <p><strong>input</strong>:<span id="txt0">"    welcome    "</span></p>
+    <p><strong>output</strong>:<span id="txt11"></span></p><hr>
+<h2>substr</h2>
+    <p><strong>input</strong>:<span id="txt0"> strength is life,weakness is death</span></p>
+    <p><strong>output</strong>:<span id="txt12"></span></p><hr>
+<h2>concat</h2>
+    <p><strong>input</strong>:<span id="txt0">"think" "future"</span></p>
+    <p><strong>output</strong>:<span id="txt13"></span></p><hr>
+<h2>split</h2>
+    <p><strong>input</strong>:<span id="txt0"> what are you doing? </span></p>
+    <p><strong>output</strong>:<span id="txt14"></span></p>
+    <p><strong>output</strong>:<span  id="txt15"></span></p>
+    <p><strong>output</strong>:<span id="txt16"></span></p>
+<script type="text/javascript">
+
+document.getElementById("txt1").innerHTML="study".toUpperCase();
+document.getElementById("txt2").innerHTML="education".length;
+document.getElementById("txt3").innerHTML="education is the future".search("future");
+document.getElementById("txt4").innerHTML="educate the girl child".indexOf("girl");
+document.getElementById("txt5").innerHTML="education is life for our future".substring(5,16);
+document.getElementById("txt6").innerHTML="try and try untill get sucess".slice(0,4);
+document.getElementById("txt7").innerHTML="active,brightness".replace("active","brightness");
+document.getElementById("txt8").innerHTML="CLASS".toLowerCase();
+document.getElementById("txt9").innerHTML="best future".charAt("2");
+document.getElementById("txt10").innerHTML="happy life".charCodeAt("6");
+document.getElementById("txt11").innerHTML="   welcome   ".trim();
+document.getElementById("txt12").innerHTML=" strength is life,weakness is death".substr(5,13);
+document.getElementById("txt13").innerHTML="think future".concat("");
+document.getElementById("txt14").innerHTML="what are you doing?".split(" ");
+document.getElementById("txt15").innerHTML="what are you doing ?".split("");
+document.getElementById("txt16").innerHTML="what are you doing ?".split(" ",3);
+</script>
+</body>
+</html>
