@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>KeyUp</title>
+    <style>
+        div{
+            width: 50%;
+            height: 150px;
+            text-align: center;
+            margin: 4opx;
+            border-style: dashed;
+            
+        }
+    </style>
+</head>
+<body id="body" >
+    <div onmousemove="mouseMove(event)">
+    <h1 id="heading"></h1>
+    </div>
+
+<script type="text/javascript">
+function mouseMove(event){
+    var elem = document.getElementById("heading");
+    elem.style.color="white";
+    elem.style.backgroundColor="red";
+    elem.innerHTML = "x-position: "+event.clientX+"<br> y-postion: "+event.clientY;
+
+}
+</script>
+
+</body>
+</html>
